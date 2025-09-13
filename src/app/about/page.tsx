@@ -71,7 +71,7 @@ export default function AboutPage() {
                   bring you the stories that matter most.
                 </p>
                 <blockquote className="border-l-4 border-red-600 pl-6 italic text-lg">
-                  "Journalism is what maintains democracy. It's the force for progressive social change."
+                  {"Journalism is what maintains democracy. It's the force for progressive social change."}
                 </blockquote>
               </div>
             </div>

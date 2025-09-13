@@ -277,8 +277,7 @@ export default function PostPage({ params }: PostPageProps) {
             {/* Article Content */}
             <article className="prose prose-xl dark:prose-invert max-w-none mb-12">
               <div className="text-xl leading-relaxed text-muted-foreground mb-8 font-light border-l-4 border-red-600 pl-6 italic">
-                "Cultural movements have always been the driving force behind societal transformation, shaping the way
-                we think, act, and perceive the world around us."
+                {"Cultural movements have always been the driving force behind societal transformation, shaping the way \n we think, act, and perceive the world around us."}
               </div>
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </article>

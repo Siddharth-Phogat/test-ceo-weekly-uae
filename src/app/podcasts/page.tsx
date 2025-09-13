@@ -1,5 +1,6 @@
 import { PodcastCard } from "@/components/podcast-card"
 import { SectionHeader } from "@/components/section-header"
+import Image from 'next/image'
 
 const podcastData = [
   {
@@ -10,6 +11,8 @@ const podcastData = [
     duration: "45 min",
     date: "Sep 3, 2024",
     category: "Leadership",
+    host: "Jane Doe",
+    slug: "ideas-and-insights-from-leaders-and-innovators",
   },
   {
     id: 2,
@@ -19,6 +22,8 @@ const podcastData = [
     duration: "32 min",
     date: "Sep 2, 2024",
     category: "Business",
+    host: "John Smith",
+    slug: "what-is-best-practice-in-the-modern-world",
   },
   {
     id: 3,
@@ -28,6 +33,8 @@ const podcastData = [
     duration: "28 min",
     date: "Sep 1, 2024",
     category: "Networking",
+    host: "Alice Johnson",
+    slug: "connecting-ideas-people-and-possibilities",
   },
   {
     id: 4,
@@ -37,6 +44,8 @@ const podcastData = [
     duration: "41 min",
     date: "Aug 31, 2024",
     category: "Communication",
+    host: "Bob Lee",
+    slug: "the-art-of-communication-in-leadership",
   },
   {
     id: 5,
@@ -46,6 +55,8 @@ const podcastData = [
     duration: "38 min",
     date: "Aug 30, 2024",
     category: "Technology",
+    host: "Carol White",
+    slug: "innovation-in-the-digital-transformation-era",
   },
   {
     id: 6,
@@ -55,6 +66,8 @@ const podcastData = [
     duration: "35 min",
     date: "Aug 29, 2024",
     category: "Sustainability",
+    host: "David Green",
+    slug: "the-future-of-sustainable-business-practices",
   },
 ]
 
@@ -77,7 +90,7 @@ export default function PodcastsPage() {
           <div className="bg-card rounded-lg overflow-hidden shadow-lg">
             <div className="md:flex">
               <div className="md:w-1/2">
-                <img
+                <Image
                   src={podcastData[0].image || "/placeholder.svg"}
                   alt={podcastData[0].title}
                   className="w-full h-64 md:h-full object-cover"

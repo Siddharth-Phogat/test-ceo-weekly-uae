@@ -12,8 +12,7 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-serif font-bold mb-4">Contact Us</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get in touch with our editorial team. We'd love to hear from you about story tips, feedback, or partnership
-            opportunities.
+            {"Get in touch with our editorial team. We'd love to hear from you about story tips, feedback, or partnership opportunities."}
           </p>
         </div>
 
@@ -22,7 +21,7 @@ export default function ContactPage() {
           <Card>
             <CardHeader>
               <CardTitle>Send us a message</CardTitle>
-              <CardDescription>Fill out the form below and we'll get back to you as soon as possible.</CardDescription>
+              <CardDescription>{"Fill out the form below and we'll get back to you as soon as possible."}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
@@ -128,13 +127,13 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-medium mb-2">Press Releases</h4>
                   <p className="text-sm text-muted-foreground">
-                    Submit press releases to editorial@thenews.com with "Press Release" in the subject line.
+                    {"Submit press releases to editorial@thenews.com with 'Press Release' in the subject line."}
                   </p>
                 </div>
                 <div>
                   <h4 className="font-medium mb-2">Corrections</h4>
                   <p className="text-sm text-muted-foreground">
-                    Found an error in our reporting? Contact us immediately with specific details for correction.
+                    {"Found an error in our reporting? Contact us immediately with specific details for correction."}
                   </p>
                 </div>
               </CardContent>
