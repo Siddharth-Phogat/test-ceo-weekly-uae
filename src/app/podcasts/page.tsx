@@ -93,6 +93,8 @@ export default function PodcastsPage() {
                 <Image
                   src={podcastData[0].image || "/placeholder.svg"}
                   alt={podcastData[0].title}
+                  width={600}
+                  height={400}
                   className="w-full h-64 md:h-full object-cover"
                 />
               </div>

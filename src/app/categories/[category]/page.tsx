@@ -308,7 +308,10 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                 ${index >= 3 ? "md:col-span-1" : ""}
               `}
             >
-              <PostCard {...article} size={index === 0 ? "large" : index <= 2 ? "large" : "medium"} />
+              <PostCard 
+                {...article} 
+                slug={article.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}
+                size={index === 0 ? "large" : index <= 2 ? "large" : "medium"} />
             </div>
           ))}
         </div>
